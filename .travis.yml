@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t alexioan/Docker-React -f Dockerfile.dev .
+  - docker build -t alexioan/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run alexioan/Docker-React npm run test -- --coverage
+  - docker run alexioan/docker-react npm run test -- --coverage
 
